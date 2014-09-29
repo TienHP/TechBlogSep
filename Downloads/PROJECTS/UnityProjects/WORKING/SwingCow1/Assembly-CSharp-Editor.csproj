@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{3E9FD762-7A9B-FA82-2054-17852683552A}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_0;UNITY_4_5;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;ENABLE_DUCK_TYPING</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\EasyTouch\Plugins\Editor\GUIEasyButtonCallBack.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\Editor\GUIEasyButtonInspector.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\Editor\GUIEasyJoystickCallBack.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\Editor\GUIEasyJoystickInspector.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\Editor\GUIEasyTouchInspector.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\Editor\GUIEasyTouchMenu.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\Editor\GUIEasytouchCallBack.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\Editor\HTGUILayout.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Editor\AddStateMachine.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Editor\CreateAction.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Editor\CreateCondition.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Editor\CreateStateMachine.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Editor\FixRefactoring.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Editor\GlobalParameterEditor.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Editor\GraphEditor.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Editor\ListExtensions.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Editor\ReorderableList.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Editor\StateInspector.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Editor\StateMachineBehaviourInspector.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Editor\StateMachineEditor.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Editor\StateMachineInspector.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Editor\UnityEditorTools.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Editor\WelcomeWindow.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\editor\terrain2d\Terrain2DEditor.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\editor\terrain2d\Terrain2DSceneEditor.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Editor\e2dEditorUtils.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Editor\e2dMeshObjectEditor.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Editor\e2dStrings.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Editor\e2dStyles.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Editor\e2dTerrainEditor.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Editor\e2dTerrainGeneratorEditor.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Editor\e2dTerrainSceneEditor.cs" />
+     <None Include="Assets\TNg_Framework\e2d\Resources\Fill.shader" />
+     <None Include="Assets\TNg_Framework\e2d\Resources\Curve.shader" />
+     <None Include="Assets\EasyTouch\Readme_first.txt" />
+     <None Include="Assets\TNg_Framework\e2d\VERSION.txt" />
+     <None Include="Assets\TNg_Framework\e2d\LICENSE.txt" />
+     <None Include="Assets\State Machine\Scripts\Actions\MySQL\PHP\crossdomain.xml" />
+     <None Include="Assets\TNg_Framework\e2d demo\Lerpz\Shaders\Particle Add (Overlay).shader" />
+     <None Include="Assets\SwingCow\xmls\PlayerProperties.xml" />
+     <None Include="Assets\TNg_Framework\core\xmls\terrain2d_strings.xml" />
+     <None Include="Assets\TNg_Framework\e2d\Resources\Grass.shader" />
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{C287B742-C975-B4F8-1A34-AC5B07B2ECEB}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript.unityproj">
+      <Project>{EA94621E-3921-DE45-C962-DFEBC2172D44}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

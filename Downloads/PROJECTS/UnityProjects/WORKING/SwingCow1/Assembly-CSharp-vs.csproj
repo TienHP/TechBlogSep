@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{C287B742-C975-B4F8-1A34-AC5B07B2ECEB}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_0;UNITY_4_5;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Book2D\Scripts\BossCrushTrigger.cs" />
+     <Compile Include="Assets\Book2D\Scripts\BossEventController.cs" />
+     <Compile Include="Assets\Book2D\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Book2D\Scripts\DeathTriggerScript.cs" />
+     <Compile Include="Assets\Book2D\Scripts\DestroyOnCollision.cs" />
+     <Compile Include="Assets\Book2D\Scripts\EnemyControllerScript.cs" />
+     <Compile Include="Assets\Book2D\Scripts\EnemyGuideWatcher.cs" />
+     <Compile Include="Assets\Book2D\Scripts\EnemyRespawner.cs" />
+     <Compile Include="Assets\Book2D\Scripts\ParallaxController.cs" />
+     <Compile Include="Assets\Book2D\Scripts\ParticleLayering.cs" />
+     <Compile Include="Assets\Book2D\Scripts\PlayerBulletController.cs" />
+     <Compile Include="Assets\Book2D\Scripts\PlayerColliderListener.cs" />
+     <Compile Include="Assets\Book2D\Scripts\PlayerStateController.cs" />
+     <Compile Include="Assets\Book2D\Scripts\PlayerStateListener.cs" />
+     <Compile Include="Assets\Book2D\Scripts\ScoreWatcher.cs" />
+     <Compile Include="Assets\Book2D\Scripts\SelfDestruct.cs" />
+     <Compile Include="Assets\Book2D\Scripts\TakeDamageFromPlayerBullet.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Example for EasyButton\Bullet.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Example for EasyButton\ETPlayer.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Example for EasyButton\ManualControl.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyJoystick\Example-thirdPerson_DirectEventMode\JoystickEvent.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyJoystick\Example_FirstPerson_DirectMode\GUIFirstDirect.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyJoystick\ExitButton.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-2D\Monster.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-FreeCam\FreeCam.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-FreeCam\GuiCam.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-ManipulationImage\GuiPhoto.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-ManipulationImage\Photo.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-MultiLayer\GuiLayer.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-MultiLayer\TouchLayer.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-Multiplefingers\GuiMultiFinger.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-Multiplefingers\ObjectTouch.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-Multiplefingers\ScreenTouch.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-Multiplefingers\SlowRotate.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-OneFinger\DoubleTap.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-OneFinger\Drag.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-OneFinger\GuiOneFinger.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-OneFinger\LongTap.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-OneFinger\Swipe.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-OneFinger\Tap.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-OneFinger\TouchStart.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-StartMenu\GuiStartMenu.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\GuiTwoFinger.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\Pinch.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\Twist.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\TwoDoubleTap.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\TwoDrag.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\TwoLongTap.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\TwoSwipe.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\TwoTap.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\TwoTouchStart.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\ECamera.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\EasyButton.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\EasyJoystick.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\EasyTouch.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\EasyTouchInput.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\Finger.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\Gesture.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\MonoSingleton.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\MovingJoystick.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\VirtualScreen.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\_C#-Event-Template\C_EasyButtonTemplate.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\_C#-Event-Template\C_EasyJoystickTemplate.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\_C#-Event-Template\C_EasyTouchTemplate.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animation\AddClip.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animation\AnimationAction.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animation\Blend.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animation\CrossFade.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animation\CrossFadeQueued.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animation\GetClipCount.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animation\Play.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animation\PlayQueued.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animation\RemoveClip.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animation\Rewind.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animation\Sample.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animation\SetWrapMode.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animation\Stop.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\AnimatorAction.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\CrossFade.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\GetAvatar.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\GetBool.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\GetFloat.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\GetPlayingState.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\Play.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\ResetTrigger.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\SetAvatar.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\SetBool.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\SetFloat.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\SetIKPosition.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\SetIKPositionWeight.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\SetIKRotation.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\SetIKRotationWeight.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\SetInt.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\SetLayerWeight.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\SetLookAtPosition.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\SetLookAtWeight.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Animator\SetTrigger.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Application\CanStreamedLevelBeLoaded.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Application\GetLoadedLevel.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Application\GetStreamProgressForLevel.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Application\HasProLicense.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Application\LoadLevel.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Application\OpenURL.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Application\Quit.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Application\RunInBackground.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Audio\AudioSourceAction.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Audio\Pause.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Audio\Play.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Audio\PlayClipAtPoint.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Audio\PlayOneShot.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Audio\SetAudioClip.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\CharacterController\Move.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\CharacterController\SimpleMove.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Debug\Beep.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Debug\Break.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Debug\ClearDeveloperConsole.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Debug\DrawLine.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Debug\DrawRay.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Debug\Log.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\AddComponent.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\BroadcastMessage.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\Destroy.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\DestroyChildren.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\DontDestroyOnLoad.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\Enabled.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\Find.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\FindChild.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\FindClosest.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\FindClosestByName.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\FindWithTag.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\GameObjectAction.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\GetComponent.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\GetComponentInChildren.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\GetProperty.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\Instantiate.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\SendMessage.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\SetActive.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\SetLayer.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\SetName.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\SetProperty.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\GameObject\SetTag.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Input\GetAcceleration.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Input\GetAxis.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Input\GetAxisRaw.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Input\GetButton.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Input\GetButtonDown.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Input\GetButtonUp.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Input\GetKey.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Input\GetKeyDown.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Input\GetKeyUp.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Input\GetMouseButton.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Input\GetMouseButtonDown.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Input\GetMouseButtonUp.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Input\GetMousePosition.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Input\GetTouch.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Input\GetTouchCount.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Input\ResetInputAxes.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Math\Clamp.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Math\Divide.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Math\Lerp.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Math\Multiply.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Math\RoundToInt.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Math\Subtract.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Math\Sum.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\MySQL\DeleteKey.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\MySQL\GetBool.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\MySQL\GetFloat.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\MySQL\GetInt.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\MySQL\GetString.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\MySQL\GetVector3.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\MySQL\Initialize.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\MySQL\SetBool.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\MySQL\SetFloat.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\MySQL\SetInt.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\MySQL\SetString.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\MySQL\SetVector3.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\ApplyRootMotion.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\Flee.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\GetAngularVelocity.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\GetDesiredVelocity.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\GetProjectedVelocity.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\GetRemainingDistance.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\GetVelocity.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\NavMeshAgentAction.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\Patrol.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\Seek.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\SetAngularSpeed.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\SetDestination.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\SetSpeed.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\SetUpdatePosition.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\SetUpdateRotation.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\Stop.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\NavMeshAgent\Wander.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Parameter\CombineStrings.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Parameter\ConvertToGameObject.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Parameter\GetListCount.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Parameter\GetListElementAt.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Parameter\SetBool.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Parameter\SetColor.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Parameter\SetFloat.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Parameter\SetInt.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Parameter\SetObject.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Parameter\SetString.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Parameter\SetVector2.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Parameter\SetVector3.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Physics\IgnoreCollision.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Physics\Linecast.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Physics\OverlapSphere.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Physics\Raycast.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Physics\SphereCastAll.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\PlayerPrefs\DeleteAll.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\PlayerPrefs\DeleteKey.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\PlayerPrefs\GetBool.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\PlayerPrefs\GetFloat.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\PlayerPrefs\GetInt.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\PlayerPrefs\GetString.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\PlayerPrefs\GetVector3.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\PlayerPrefs\HasKey.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\PlayerPrefs\Save.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\PlayerPrefs\SetBool.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\PlayerPrefs\SetFloat.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\PlayerPrefs\SetInt.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\PlayerPrefs\SetString.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\PlayerPrefs\SetVector3.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Random\InsideUnitCircle.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Random\Range.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Random\UnitValue.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Rigidbody\AddExplosionForce.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Rigidbody\AddForce.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Rigidbody\AddForceAtPosition.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Rigidbody\AddRelativeForce.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Rigidbody\AddRelativeTorque.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Rigidbody\AddTorque.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Rigidbody\GetTrajectoryVelocity.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Rigidbody\RigidbodyAction.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Rigidbody2D\AddForce.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Rigidbody2D\AddForceAtPosition.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Rigidbody2D\AddRelativeForce.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Rigidbody2D\AddTorque.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Rigidbody2D\Rigidbody2DAction.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Rigidbody2D\SetVelocity.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Rigidbody2D\Sleep.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Rigidbody2D\WakeUp.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\StateAction.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\StateMachine\DisableStateMachine.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\StateMachine\EnableStateMachine.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\StateMachine\SendEvent.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\StateMachine\SetDefaultState.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\StateMachine\SetState.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\StateMachine\SetStateMachine.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\Forward.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\GetAngularVelocity.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\GetChildCount.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\GetDirection.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\GetEulerAngles.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\GetPosition.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\GetPositionInRange.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\LookAt.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\LookAt2D.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\Parent.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\Rotate.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\SetEulerAngles.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\SetPosition.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\Shake.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\SmoothLookAt.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\TransformDirection.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\TransformPoint.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\Translate.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Transform\Up.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Vector3\Add.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Vector3\Angle.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Vector3\Construct.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Vector3\Distance.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Vector3\GetComponent.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Vector3\GetInRange.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Vector3\Lerp.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Vector3\Magnitude.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Vector3\Multiply.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Vector3\Normalize.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Vector3\SignAngle.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Actions\Vector3\Subtract.cs" />
+     <Compile Include="Assets\State Machine\Scripts\AnyState.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Animation\IsPlaying.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Animator\GetBool.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Animator\GetFloat.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Animator\GetInt.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Animator\IsInTransition.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Animator\IsName.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Application\CanStreamedLevelBeLoaded.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Application\IsConnectedToInternet.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Application\IsEditor.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Application\IsLoadingLevel.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Application\IsWebPlayer.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Events\OnCollisionEnter.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Events\OnCollisionExit.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Events\OnCollisionStay.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Events\OnCustomEvent.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Events\OnLevelWasLoaded.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Events\OnTriggerEnter.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Events\OnTriggerEnter2D.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Events\OnTriggerExit.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Events\OnTriggerExit2D.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Events\OnTriggerStay.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Events\OnTriggerStay2D.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\FloatComparer.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\GameObject\Distance.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\GameObject\IsActive.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\GameObject\IsLayer.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\GameObject\IsName.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\GameObject\IsTag.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\GameObject\LineOfSight.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Input\GetKeyDown.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Input\GetMouseButtonDown.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Input\GetMouseButtonUp.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\NavMeshAgent\GetRemainingDistance.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\NavMeshAgent\HasPath.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Parameter\GetBool.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Parameter\GetFloat.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Parameter\GetInt.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Parameter\GetListCount.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Parameter\IsNull.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Parameter\IsStringEqual.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Parameter\IsStringNullOrEmpty.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Parameter\IsStringStartWith.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Physics\CheckSphere.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Physics\Linecast.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Physics\Raycast.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\StateCondition.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\StateMachine\State\IsFinished.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Conditions\Time\ExitTime.cs" />
+     <Compile Include="Assets\State Machine\Scripts\CoroutineInstance.cs" />
+     <Compile Include="Assets\State Machine\Scripts\FieldInfoAttribute.cs" />
+     <Compile Include="Assets\State Machine\Scripts\InfoAttribute.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Parameters\AddToParameterCollection.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Parameters\BoolParameter.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Parameters\ColorParameter.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Parameters\FloatParameter.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Parameters\GlobalParameterCollection.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Parameters\IntParameter.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Parameters\ListParameter.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Parameters\NamedParameter.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Parameters\ObjectParameter.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Parameters\StringParameter.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Parameters\SystemObjectParameter.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Parameters\Vector2Parameter.cs" />
+     <Compile Include="Assets\State Machine\Scripts\Parameters\Vector3Parameter.cs" />
+     <Compile Include="Assets\State Machine\Scripts\State.cs" />
+     <Compile Include="Assets\State Machine\Scripts\StateMachine.cs" />
+     <Compile Include="Assets\State Machine\Scripts\StateMachineBehaviour.cs" />
+     <Compile Include="Assets\State Machine\Scripts\StateTransition.cs" />
+     <Compile Include="Assets\State Machine\Scripts\UnityEventHandler.cs" />
+     <Compile Include="Assets\State Machine\Scripts\UnityTools.cs" />
+     <Compile Include="Assets\SwingCow\scripts\bird\BirdAI.cs" />
+     <Compile Include="Assets\SwingCow\scripts\camera\CameraAuto.cs" />
+     <Compile Include="Assets\SwingCow\scripts\managers\DataManager.cs" />
+     <Compile Include="Assets\SwingCow\scripts\managers\GameController.cs" />
+     <Compile Include="Assets\SwingCow\scripts\player\PlayerActions.cs" />
+     <Compile Include="Assets\SwingCow\scripts\player\PlayerAnimationListener.cs" />
+     <Compile Include="Assets\SwingCow\scripts\player\PlayerColliderListener.cs" />
+     <Compile Include="Assets\SwingCow\scripts\player\PlayerGameStateListener.cs" />
+     <Compile Include="Assets\SwingCow\scripts\player\PlayerStateController.cs" />
+     <Compile Include="Assets\SwingCow\scripts\player\PlayerStateEditor.cs" />
+     <Compile Include="Assets\SwingCow\scripts\player\PlayerStateListener.cs" />
+     <Compile Include="Assets\SwingCow\scripts\properties\PlayerProperties.cs" />
+     <Compile Include="Assets\SwingCow\scripts\vane\VaneAutoMovement.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\common\EditorConstantStore.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\common\EditorStringStore.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\common\TNg_Singleton.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\entities\Entities.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\t2dcomponent\T2DDataType.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\t2dcomponent\T2DMeshObject.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\t2dcomponent\T2DTerrainBoundary.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\t2dcomponent\T2DTerrainColliderMesh.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\t2dcomponent\T2DTerrainCurveMesh.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\t2dcomponent\T2DTerrainFillMesh.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\t2dcomponent\T2DTerrainGrassMesh.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\t2dcomponent\T2DTerrainMesh.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\t2dcomponent\Terrain2D.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\t2dcomponent\t2dDelegate.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\utilities\T2DEditorUtils.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\utilities\T2DUtils.cs" />
+     <Compile Include="Assets\TNg_Framework\core\scripts\base\utilities\XMLParser.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d demo\Basic\BasicGUI.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d demo\Camera\CameraFocus.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d demo\Car\CarControl.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d demo\Car\CarGUI.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d demo\Lerpz\LanternFixer.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d demo\Lerpz\LerpzGUI.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Generator\e2dCurveMethods.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Generator\e2dMidpoint.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Generator\e2dPerlinNoise.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Generator\e2dPerlinOctave.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Generator\e2dVoronoi.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Terrain\e2dMeshObject.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Terrain\e2dTerrainBoundary.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Terrain\e2dTerrainColliderMesh.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Terrain\e2dTerrainCurveMesh.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Terrain\e2dTerrainDataTypes.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Terrain\e2dTerrainFillMesh.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Terrain\e2dTerrainGrassMesh.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Terrain\e2dTerrainMesh.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Terrain\e2dTriangulator.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Utils\e2dConstants.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\Utils\e2dUtils.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\doxygen.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\e2dTerrain.cs" />
+     <Compile Include="Assets\TNg_Framework\e2d\e2dTerrainGenerator.cs" />
+     <None Include="Assets\TNg_Framework\e2d\Resources\Fill.shader" />
+     <None Include="Assets\TNg_Framework\e2d\Resources\Curve.shader" />
+     <None Include="Assets\EasyTouch\Readme_first.txt" />
+     <None Include="Assets\TNg_Framework\e2d\VERSION.txt" />
+     <None Include="Assets\TNg_Framework\e2d\LICENSE.txt" />
+     <None Include="Assets\State Machine\Scripts\Actions\MySQL\PHP\crossdomain.xml" />
+     <None Include="Assets\TNg_Framework\e2d demo\Lerpz\Shaders\Particle Add (Overlay).shader" />
+     <None Include="Assets\SwingCow\xmls\PlayerProperties.xml" />
+     <None Include="Assets\TNg_Framework\core\xmls\terrain2d_strings.xml" />
+     <None Include="Assets\TNg_Framework\e2d\Resources\Grass.shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
